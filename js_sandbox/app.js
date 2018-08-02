@@ -1,40 +1,63 @@
-// alert("hello horld")
+// var , let, const
 
-/*
-multi
-line 
-comments 
-*/
+// // Init variable
+// var st;
+// console.log(st);
+// st = "Hello";
+// console.log(st);
 
-// Log to console
+// // reassign variable
+// var name = 'johir';
+// console.log(name);
+// name = 'raihan';
+// console.log(name);
 
-console.log("hello world"); // text color black
-console.log(124); // color blue
-console.log(true);
-var st  = " Hello ";
-console.log(st);
-console.log([1,2,3,4,5]);
-console.log({a:1, b:2});
-console.table({a:1,b:2});
+// // latters, numbers, _, $
+// // Can't start with number
+// // var 1nam = 'Johi';
+// var _nam = "johirrrr";
+// var $nam = "johirrrr";
 
-console.error("This is some error")// color red
-// console.clear();
+// // for regular variable
+// var firstName = 'Johir'; // Camel
+// var first_name = 'Johir'; // Underscore
+// // for ES6 Class
+// var FirstName = 'Johir'; // Pascal
 
-console.warn('This is warning'); //color orange
+// <---------LET--------
 
-console.time("Hello");
-console.log("hello world");
-console.log("hello world");
+// // Init variable
+// let st;
+// console.log(st);
+// st = "Hello";
+// console.log(st);
 
-console.log("hello world");
-console.log("hello world");
-console.log("hello world");
-console.log("hello world");
+// // reassign variable
+// let name = 'johir';
+// console.log(name);
+// name = 'raihan';
+// console.log(name);
 
-console.timeEnd('Hello');
+// <-----------------CONST-------------
 
+// reassign variable
+const name = 'johir';
+console.log(name);
+//can't reassign
+// name = 'raihan';
 
+const person = {
+  name: 'John',
+  age: 30
+};
 
+person.name = 'Hello';
+person.age= '34';
 
+// console.log(person);
 
+const num = [1,2,3,4,5];
+// num.push(6);
+num.concat(8);
+console.log(num);
 
