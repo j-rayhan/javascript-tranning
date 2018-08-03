@@ -1,65 +1,51 @@
-// Primitive Data Types:
-/*
-1. Stored Directly in the locatoon the variable accesses
-2. Stored on the stack
-*/
+let val;
 
-/*
-1. String
-2. Number
-3. Boolean
-4. Null          // Read the different in NULL & UNDEFINED
-5. Undefined
-6 Symbols(ES6)
-*/
+// Number to String
+val = 5;
+val = String(555);
+val = String(4+4);
+// Bool to String
+val = String(true);
+// Date to String
+val = String(new Date());
+// Array to String
+val = String([1,2,3,5]);
 
-//String
-const name = "Johir";
-// Number
-const num = 33;
-// Boolean
-const isOpen = true;
-// Null
-const pan = null; // print Object // for get details google it
-// Undefined
-let startDate;  // It's not const
-// Symbol
-const sym = Symbol();
-// console.log(typeof sym);
+// toString();
+val = (5).toString();
+val = (true).toString();
+// //Output
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.length); // Number have no length it's undefined
 
+// String to Number
+val = Number('5'); //log print 1) 5 2) number 3) 5
+val = Number(true); //log print 1) 1 2) number 3) 1
+val = Number(false); //log print 1) 0 2) number 3) 0
+val = Number(null); //log print 1) 0 2) number 3) 0
+val = Number('hello'); //log print 1) NaN 2) number 3) NaN
+val = Number([1,2,3]); //log print 1) NaN 2) number 3) NaN
 
+val = parseInt('100.40');
+val = parseFloat('100.40');
 
-// Referance Data Types:
-/*
-1. Accessed by reference
-2. Objects that are stored on the heap
-3. A pointer to a location in memory
-*/
- 
-/*
-1. Arrays
-2. Object Literals
-3. Functions
-4. Dates
-5. Anything Else......
-*/
-
-// Array
-const hobbies = ['movies', 'music', 'sports'];
-// Object literal
-const address = {
-  city: 'Dhaka',
-  state: 'H1'
-}
-
-const today = new Date();
-console.log(today);
-console.log(typeof today);
+//Output
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.toFixed(3)); // toFixed use for show decimal value
 
 
-// Types are associated with values not variables
-// The same variable can hold multiple types
-// We do not need to specify types
-// There are supersets of JS and addons to allow static typing(TypeScript, Flow)
+// This example of cohesion
+// const val1 = 5;
+// const val1 = '5';
+const val1 = String(5);
+const val2 = 6;
+// const sum = val2 + val1;
+const sum = Number(val2 + val1); // only Change the type ADD value is 65
 
-// Most other languages are statically typed (java, C#, C++)
+
+// Output
+console.log(sum);
+console.log(typeof sum);
+
