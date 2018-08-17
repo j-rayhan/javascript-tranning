@@ -1,71 +1,58 @@
-// FOR loop
+// WINDOW METHODS / OBJECTS / PROPERTIES
 
-// for (let i = 0; i < 8; i++) {
-//   if (i === 2) {
-//     console.log(' 2 is my favorite number');
-//     continue;
-//   }  
-//   if (i === 6) {
-//     console.log(' Stop the loop');
-//     break;
-//   }
-//   console.log('NUmber '+ i);
-  
+// window.console.log('Hello ');
+// window.alert('Hello');
+
+//Prompt
+// const input  = prompt();
+// alert(input);
+
+// Confirm
+
+// if (confirm('Are you sure')) {
+//   console.log('YES');
+// } else {
+//   console.log('No');
 // }
 
-// let i = 20;
-// // While loop
-// while (i<5) {
-//   console.log('Number '+ i);
-//   i++;
-// }
+let val;
 
-// // Do while
-// do {
-//   console.log('Number '+ i); // it must be print one
-//   i++;
-// } while (i<10);
+// Outer height and width
 
-// LOOP through array
-const cars = ['Ford', 'Honda', 'Toyota'];
+// val = window.outerHeight;
+// val = window.outerWidth;
 
-// for (let i = 0; i < cars.length; i++) {
-//   const element = cars[i];
-//   console.log(element);
-// }
+// Inner height and width
 
-// // use this 
-// cars.forEach(car => {
-//   console.log(car);
-// });
+// val = window.innerHeight;
+// val = window.innerWidth;
 
-// cars.forEach((car ,index , array) => {
-//   console.log(`${index} : ${car}`);
-//   console.log(array);
-// });
+// Scroll points "add this on index.html file   <div style="margin-top: 1000px"></div>"
 
-//MAP
-const users = [
-  {id: 1, name: 'Ja'},
-  {id: 2, name: 'Ka'},
-  {id: 3, name: 'Ra'}
-];
+// val = window.scrollY;
+// val = window.scrollX;
 
-const ids = users.map( user => {
-  return user.id;
-});
+// Location Object
+// val = window.location;
+// val = window.location.host;
+// val = window.location.hostname;
+// val = window.location.port;
+// val = window.location.search; // add this on url 'http://127.0.0.1:5500/js_sandbox/?id=3'
 
-// console.log(ids);
+// Redirect
+// window.location.href = 'http://google.com';
 
-// FOR IN LOOP
-const user = {
-  name: 'Ja',
-  age: 22,
-  email: "a@g.com"
-};
+// Reload
+// window.location.reload();
 
-for (const x in user) {
-  console.log(`${x}: ${user[x]}`);
-  
-};
+// History object
 
+// visite some website 
+// window.history.go(-2);
+// val = window.history.length;
+
+// Navigator object
+val = window.navigator;
+val = window.navigator.platform;
+val = window.navigator.vendor;
+console.log(val);
